@@ -1,0 +1,135 @@
+3 start_of_sprint
+ZERO:0 ONE:1 TWO:2 THREE:3 FOUR:4 FIVE:5 SEVEN:7 NINE:9 TEN:10 one:1 two:2 zero:0
+cursor:program constant:HALT
+
+
+start_of_sprint:7 cursor checkifjump
+check_for_3:4 checkifjump:0 THREE move_cursor
+
+
+7 cursor checkifhalt
+check_for_9:4 NINE checkifhalt:0 HALT
+
+7 cursor checkifadd
+check_for_1:4 ONE checkifadd:0 add_number   
+
+7 cursor checkifsub
+check_for_2:4 TWO checkifsub:0 sub_number 
+
+7 cursor checkifcopy
+check_for_7:4 SEVEN checkifcopy:0 copy_number
+
+7 cursor checkifequal check_for_4:4 FOUR checkifequal:0 equal_number
+
+7 cursor checkifless
+check_for_5:4 FIVE checkifless:0 less_number
+
+7 cursor checkifmult 
+check_for_10:4 TEN checkifmult:0 mult_number
+
+move_cursor:1 one cursor cursor
+7 cursor j1
+1 constant j1:0 cursor
+3 start_of_sprint
+
+add_number:1 cursor one cursor
+7 cursor a1
+1 constant a1:0 addof1st
+1 cursor one cursor
+7 cursor a2
+1 constant a2:0 addof2nd
+1 cursor one cursor 
+7 cursor a3
+1 constant a3:0 loctoadd
+1 addof1st:0 addof2nd:0 loctoadd:0
+1 cursor one cursor
+3 start_of_sprint
+
+sub_number:1 cursor one cursor
+7 cursor s1
+1 constant s1:0 subof1st
+1 cursor one cursor
+7 cursor s2
+1 constant s2:0 subof2nd
+1 cursor one cursor 
+7 cursor s3
+1 constant s3:0 loctosub
+2 subof1st:0 subof2nd:0 loctosub:0
+1 cursor one cursor
+3 start_of_sprint
+
+copy_number:1 cursor one cursor
+7 cursor c1
+1 constant c1:0 copyfrom
+1 cursor one cursor 
+7 cursor c2
+1 constant c2:0 copyto
+7 copyfrom:0 copyto:0
+1 cursor one cursor
+3 start_of_sprint
+
+
+equal_number:1 cursor one cursor
+7 cursor e1
+1 constant e1:0 check1
+1 cursor one cursor
+7 cursor e2 
+1 constant e2:0 check2
+1 cursor one cursor
+4 check1:0 check2:0 jumpifequal
+1 cursor one cursor
+3 start_of_sprint
+jumpifequal:7 cursor e3
+1 constant e3:0 cursor
+3 start_of_sprint
+
+
+less_number:1 cursor one cursor
+7 cursor l1
+1 constant l1:0 checkforl1
+1 cursor one cursor
+7 cursor l2 
+1 constant l2:0 checkforl2
+1 cursor one cursor
+5 checkforl1:0 checkforl2:0 jumpifless
+1 cursor one cursor
+3 start_of_sprint
+jumpifless:7 cursor l3
+1 constant l3:0 cursor
+3 start_of_sprint
+
+mult_number:1 cursor one cursor
+3 mult
+first_mul:0 second_mul:0
+result_for_mul:0 count_for_mul:0
+mult:7 cursor m1
+1 constant m1:0 mul_copy_first
+7 mul_copy_first:0 first_mul
+1 cursor one cursor 
+7 cursor m2
+1 constant m2:0 mul_copy_sec
+7 mul_copy_sec:0 second_mul
+mul_loop:4 count_for_mul second_mul end_for_mult
+1 result_for_mul first_mul result_for_mul
+1 count_for_mul one count_for_mul
+3 mul_loop
+end_for_mult:1 cursor one cursor 
+7 cursor m3
+1 constant m3:0 copy_of_mul_result
+7 result_for_mul copy_of_mul_result:0
+7 zero result_for_mul
+7 zero count_for_mul
+1 cursor one cursor
+3 start_of_sprint
+
+
+
+
+HALT:9
+
+
+
+
+
+
+program:3 9 10 6 0 20 6 0 10 3 4 5 10 6 7 8 9

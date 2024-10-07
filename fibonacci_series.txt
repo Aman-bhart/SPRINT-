@@ -1,0 +1,15 @@
+3 5 first_element_location:100 n:5
+3 start 
+zero:0 one:1 t1:0 t2:1 t3:0 counter:0
+first:0
+start:7 first_element_location first
+copy:7 first first1
+loop:4 counter n halt 
+7 t3 first1:0
+7 t2 t1
+7 t3 t2
+1 t1 t2 t3
+1 counter one counter 
+1 first one first
+3 copy 
+halt:9   

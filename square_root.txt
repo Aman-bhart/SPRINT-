@@ -1,0 +1,21 @@
+3 5 input:625 result:0
+4 input result 58
+start:5 input sq 51
+4 input sq 59
+2 sq sq sq
+5 h1 num 38
+2 h1 h1 h1
+7 one h2
+1 num one num 
+3 start
+1 sq num sq
+1 h1 one h1
+7 sq sq
+3 21
+2 num two num
+7 num result
+9
+2 num one result
+9
+sq:0 num:0 h1:0 h2:1
+one:1 two:2

@@ -1,0 +1,26 @@
+3 7 
+sequence_location:73 seq_length:0 
+cycle_location:81 cycle_length:10
+3 start 
+counter:0 
+one:1 right:0 right2:0 last_seq:-1
+start:4 seq_length counter halt
+7 sequence_location right
+1 right last_seq last_seq
+1 last_seq seq_length last_seq
+7 cycle_location right2
+loop:4 counter cycle_length halt
+7 right fromcopy
+7 right2 tocopy
+7 fromcopy:0 tocopy:0
+1 one right2 right2
+5 right last_seq jump
+7 sequence_location right
+1 counter one counter
+3 loop
+jump:1 one right right
+1 counter one counter  
+3 loop 
+
+halt:9 
+1 2 3 4

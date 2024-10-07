@@ -1,0 +1,27 @@
+3 start 
+num:555 result:0 reverse:0
+count:0
+remain:0
+ten:10 h1:0
+divisor:0 one:1
+start:7 num divisor
+5 divisor one check
+7 divisor remain
+2 divisor divisor divisor
+5 remain ten 40
+2 remain ten remain 
+1 divisor one divisor
+3 26
+2 h1 h1 h1
+5 count ten 61
+7 h1 reverse
+1 reverse remain reverse 
+2 count count count 
+3 15
+1 h1 reverse h1
+1 count one count 
+3 44
+check:4 num reverse 76
+halt:9
+7 one result 
+9

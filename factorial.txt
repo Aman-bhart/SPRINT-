@@ -1,0 +1,19 @@
+3 5 fact:5 result:1
+7 fact h1
+7 fact h2
+5 count fact 16
+9 
+2 h2 one h2
+7 h1 result 
+4 h3 h2 37
+1 h1 result h1 
+1 h3 one h3 
+3 23
+7 one h3 
+1 count one count 
+3 11
+count:1
+h1:0
+h2:0
+h3:1
+one:1

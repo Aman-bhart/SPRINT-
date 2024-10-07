@@ -1,0 +1,16 @@
+3 5 number:100 result:0
+3 start 
+remainder:0
+quotient:0
+one:1
+ten:10
+start:7 number quotient 
+add:1 result remainder result 
+copy:7 quotient remainder 
+sub:2 quotient quotient quotient 
+check:5 remainder one halt 
+loop:5 remainder ten add
+2 remainder ten remainder 
+1 quotient one quotient
+3 loop 
+halt:9 

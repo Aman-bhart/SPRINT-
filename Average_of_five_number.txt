@@ -1,0 +1,12 @@
+3 start 1st:1 2nd:2 3rd:3 4th:4 5th:5 result:0
+stop:9
+sum:0 divi:5 
+start:1 sum 1st sum
+1 sum 2nd sum 
+1 sum 3rd sum 
+1 sum 4th sum
+1 sum 5th sum
+5 sum divi stop
+1 result 36 result
+2 sum divi sum 
+3 32 

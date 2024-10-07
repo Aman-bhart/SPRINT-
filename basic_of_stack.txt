@@ -1,0 +1,42 @@
+3 start0
+push_element:0 poped_element:0
+length:4
+location_of_stack:100
+end_of_stack:0 extra:0
+one:1 zero:0 top:0 function:0
+
+
+start0:7 location_of_stack top
+start:1 location_of_stack length 
+      extra
+      2 extra one 
+       end_of_stack
+      4 top extra HALT
+      6 function
+      4 function one push
+      4 function zero pop
+
+
+
+push:4 top extra HALT
+     pushpro:6 push_element 
+     7 top pushing
+     7 push_element pushing:0
+     1 top one top 
+     3 start
+
+
+pop:4 top location_of_stack HALT
+    2 top one top
+    poppro:7 top poping
+    7 poping:0 poped_element
+    7 top pop1
+    7 zero pop1:0
+    3 start
+    
+
+HALT:9
+      
+     
+     
+          
